@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --main-color: #800404;
+    --main-color-2: #a80505;
+    --text-color: #e8e8e8;
+    --bg-color: #170000;
+    --bg-color-2: #e3e3e3;
+    --bg-color-3: #1dbfae;
+    --bg-color-4: #1aa193;
+    --site-color-1: #203e8a;
+    --site-color-2: #020916;
+    --site-color-3: #fdd92a;
+}
+
+#container {
+    color: var(--text-color);
+    background-image: url(../img/SPN_bg.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover 100%;
+    width: 100%;
+}
+
+
+/* navbar */
+
+header {
+    width: 100%;
+    transition: 0.5s;
+}
+
+header nav {
+    width: 100%;
+    background-color: transparent;
+}
+
+
+/* SPN abt */
+
+header #headline {
+    width: 33%;
+    margin: auto;
+    text-align: center;
+}
+
+header #headline h1 {
+    font-family: 'Roboto Mono', monospace;
+    padding: 30px 0px;
+    background-color: var(--bg-color);
+}
+
+header #plot_info {
+    width: 100%;
+    position: relative;
+    padding: 33px 0px;
+    background-color: var(--bg-color);
+    border-radius: 11px;
+}
+
+header #plot_info h2 {
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 0px;
+}
+
+header #plot_info .btn {
+    float: right;
+    font-size: 13px;
+    margin-right: 30px;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    transition: 0.5s;
+}
+
+header #plot_info .btn:hover {
+    transform: scale(1.1);
+    filter: brightness(111%);
+    color: white;
+}
+
+
+/* spn-card */
+
+#spn_card {
+    display: flex;
+    width: 100%;
+    margin: 22px 0px;
+    padding-left: 20px;
+    padding-right: 160px;
+    background-color: transparent;
+}
+
+#spn_card .card {
+    background-color: transparent;
+}
+
+#spn_card .card:hover {
+    transform: scale(1.1);
+    z-index: 1;
+    transition: 0.5s;
+}
+
+#spn_card #spn_c_1 a span,
+#spn_card #spn_c_2 a span,
+#spn_card #spn_c_3 a span,
+#spn_card #spn_c_4 a span,
+#spn_card #spn_c_5 a span,
+#spn_card #spn_c_6 a span,
+#spn_card #spn_c_7 a span,
+#spn_card #spn_c_8 a span,
+#spn_card #spn_c_9 a span,
+#spn_card #spn_c_10 a span,
+#spn_card #spn_c_11 a span,
+#spn_card #spn_c_12 a span,
+#spn_card #spn_c_13 a span,
+#spn_card #spn_c_14 a span,
+#spn_card #spn_c_15 a span {
+    color: white;
+}
+
+#spn_card #spn_c_1 a img,
+#spn_card #spn_c_2 a img,
+#spn_card #spn_c_3 a img,
+#spn_card #spn_c_4 a img,
+#spn_card #spn_c_5 a img,
+#spn_card #spn_c_6 a img,
+#spn_card #spn_c_7 a img,
+#spn_card #spn_c_8 a img,
+#spn_card #spn_c_9 a img,
+#spn_card #spn_c_10 a img,
+#spn_card #spn_c_11 a img,
+#spn_card #spn_c_12 a img,
+#spn_card #spn_c_13 a img,
+#spn_card #spn_c_14 a img,
+#spn_card #spn_c_15 a img {
+    filter: brightness(50%);
+}
+
+#spn_card #spn_c_1 a img:hover,
+#spn_card #spn_c_2 a img:hover,
+#spn_card #spn_c_3 a img:hover,
+#spn_card #spn_c_4 a img:hover,
+#spn_card #spn_c_5 a img:hover,
+#spn_card #spn_c_6 a img:hover,
+#spn_card #spn_c_7 a img:hover,
+#spn_card #spn_c_8 a img:hover,
+#spn_card #spn_c_9 a img:hover,
+#spn_card #spn_c_10 a img:hover,
+#spn_card #spn_c_11 a img:hover,
+#spn_card #spn_c_12 a img:hover,
+#spn_card #spn_c_13 a img:hover,
+#spn_card #spn_c_14 a img:hover,
+#spn_card #spn_c_15 a img:hover {
+    transition: 0.5s;
+    filter: brightness(120%);
+    /* transform: scale(1.1); */
+}
+
+
+/* spn_s_abt */
+
+#spn_s_abt #heading {
+    width: 100%;
+    text-align: center;
+}
+
+#spn_s_abt #heading span {
+    font-size: 33px;
+    font-family: 'Bebas Neue', cursive;
+    color: var(--text-color);
+    text-shadow: 3px 3px var(--bg-color);
+}
+
+#spn_s_abt #title span {
+    font-family: 'Poppins', sans-serif;
+}
+
+#spn_s_abt #seasons:hover {
+    transition: 0.5s;
+    filter: brightness(133%);
+    transform: scale(1.1);
+}
+
+#spn_s_abt .btn:hover {
+    filter: brightness(133%);
+    --webkit-transform: 1px;
+}
+
+#spn_s_abt #seasons #S_info {
+    padding: 30px;
+}
+
+#spn_s_abt #seasons #S_info p {
+    font-family: 'Arvo', serif;
+}
+
+#spn_s_abt #watch .btn {
+    background-color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+#spn_s_abt #watch span {
+    color: var(--text-color);
+    margin: 10px;
+}
+
+#spn_s_abt #sites .btn {
+    margin-right: 10px;
+}
+
+#spn_s_abt #sites #btn1 {
+    background-color: var(--site-color-1);
+}
+
+#spn_s_abt #sites #btn1 span {
+    color: var(--text-color);
+}
+
+#spn_s_abt #sites #btn2 {
+    background-color: var(--site-color-2);
+}
+
+#spn_s_abt #sites #btn2 span {
+    color: var(--site-color-3);
+}
+
+#spn_s_abt #sites #btn3 {
+    background-color: var(--site-color-3);
+}
+
+#spn_s_abt #sites #btn3 span {
+    color: var(--site-color-2);
+}
+
+
+/* spn-shop-&-site */
+
+#spn_ssd_total {
+    margin: 0px 33px;
+}
+
+#spn_s_s_d {
+    width: 33%;
+    margin: auto;
+}
+
+#spn_ssd h3 {
+    margin: 11px 0px;
+    text-align: center;
+    background-color: var(--site-color-2);
+}
+
+#spn_ss ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 36px;
+    text-align: center;
+}
+
+#spn_ss ul li {
+    background-color: var(--site-color-2);
+    border: 1px solid var(--site-color-1);
+    border-radius: 18px;
+    padding: 7px;
+    margin: 0px 3px;
+    transition: 0.5s;
+}
+
+#spn_ss ul li:hover {
+    filter: brightness(111%);
+    transform: scale(1.1);
+}
+
+#spn_ss ul li img {
+    border-radius: 9px;
+}
+
+#spn_ss ul li span {
+    color: var(--text-color);
+}
+
+
+/* footer */
+
+footer {
+    background-color: var(--bg-color);
+    border-radius: 11px;
+}
+
+@media (max-width:3840px) {
+    header nav #menu {
+        width: 100%;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+    }
+    header nav #left_menu {
+        display: flex;
+        position: relative;
+        align-items: center;
+        padding-left: 10px;
+        /* justify-content: stretch;
+        padding-top: 15px; */
+    }
+    header #menu #left_menu #logo {
+        display: flex;
+        position: relative;
+        align-items: center;
+        font-size: 22px;
+        padding: 5px;
+        border: 3px solid var(--bg-color-4);
+        background-color: var(--bg-color);
+        border-radius: 10px;
+    }
+    header #menu #left_menu #logo:hover {
+        border: 3px solid var(--bg-color-3);
+        color: white;
+    }
+    header #menu #left_menu #logo span {
+        color: var(--text-color);
+        font-family: 'Lobster', cursive;
+        font-weight: bolder;
+    }
+    header nav #menu #left_menu #main .home .seasons .shop {
+        padding-top: 10px;
+    }
+    header nav #left_menu li {
+        padding-right: 1rem;
+        margin: 0px 5px;
+        position: relative;
+        /* padding: 18px 10px 0px 18px; */
+    }
+    header nav #left_menu .main a {
+        text-align: center;
+        padding-left: 12px;
+    }
+    header nav #left_menu .main a:hover {
+        color: white;
+    }
+    header nav #left_menu .main a::after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background-color: var(--bg-color-4);
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        transition: 0.5s;
+    }
+    header nav #left_menu .main a:hover::after,
+    header nav #left_menu .main .active::after {
+        width: 100%;
+    }
+    header nav #left_menu a {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: var(--text-color);
+    }
+    header nav #right_menu {
+        margin: 18px;
+    }
+    header nav #right_menu .btn {
+        position: relative;
+        background-color: var(--main-color);
+    }
+    header nav #right_menu .btn:hover {
+        background-color: var(--main-color-2);
+        color: white;
+        padding: 9px 24px;
+    }
+    header nav #right_menu .btn:active {
+        transform: translate(0px, 1px);
+        -webkit-transform: 1px;
+        filter: brightness(120%);
+        box-shadow: 3px;
+    }
+    header nav #right_menu span {
+        font-size: medium;
+        font-weight: bolder;
+        text-transform: uppercase;
+        color: var(--text-color);
+    }
+    header #plot_info #plot {
+        padding: 0px 100px;
+        font-size: 22px;
+        font-weight: bold;
+        font-family: 'Abel', sans-serif;
+        text-align: center;
+        color: var(--text-color);
+        text-shadow: 2px 2px var(--bg-color);
+    }
+    #spn_s_abt #seasons {
+        margin: 18px 72px;
+        display: flex;
+        background-color: var(--bg-color);
+        border: 2px solid rgb(121, 121, 121);
+        border-radius: 10px;
+    }
+    #spn_s_abt #seasons img {
+        padding: 10px;
+        border-radius: 20px;
+    }
+    footer #contact {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 22px;
+    }
+    footer #CPRR {
+        margin: 5px 0px;
+        text-align: center;
+    }
+    footer #Subscribe form {
+        display: flex;
+    }
+    footer #Subscribe form button {
+        border-radius: 3px;
+    }
+    footer #Subscribe form,
+    footer #Subscribe form input,
+    footer #Subscribe form button,
+    footer #Subscribe i {
+        margin: 3px;
+    }
+}
+
+@media (max-width:760px) {
+    header #headline {
+        width: 44%;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media (max-width:600px) {
+    header nav #menu {
+        width: 100%;
+        display: inline-block;
+        position: relative;
+    }
+    header nav #left_menu {
+        display: list-item;
+        text-align: center;
+        padding-left: 0px;
+    }
+    header #menu #left_menu #logo {
+        text-align: center;
+        font-size: 22px;
+        padding: 0px;
+    }
+    header #menu #left_menu #logo span {
+        color: var(--text-color);
+        font-family: 'Lobster', cursive;
+        font-weight: bolder;
+    }
+    header nav #menu #left_menu #main .home .seasons .shop {
+        padding-top: 1px;
+    }
+    header nav #left_menu li {
+        margin: 0px;
+    }
+    header nav #left_menu .main a {
+        text-align: center;
+        padding-left: 0px;
+    }
+    header nav #right_menu {
+        padding-right: 22px;
+    }
+    header nav #right_menu .btn {
+        display: flex;
+        justify-content: center;
+        background-color: var(--main-color);
+    }
+    header nav #right_menu span {
+        font-size: small;
+        font-weight: bolder;
+        text-transform: uppercase;
+        color: var(--text-color);
+    }
+    #spn_card {
+        display: none;
+    }
+    #spn_s_abt #seasons {
+        display: block;
+        margin: 3px 11px;
+    }
+    #spn_s_abt {
+        display: block;
+    }
+    #spn_ss ul {
+        display: block;
+        text-align: center;
+    }
+    #spn_ss ul li {
+        background-color: var(--site-color-2);
+        border: 1px solid var(--site-color-1);
+        border-radius: 18px;
+        transition: 0.5s;
+    }
+    #spn_ss ul li img {
+        width: 210px;
+        height: 280px;
+    }
+    #spn_ss ul li {
+        margin: 10px 3px;
+    }
+    footer #contact {
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+    }
+    footer #Subscribe form {
+        display: flex;
+    }
+    footer #Subscribe form,
+    footer #Subscribe form input,
+    footer #Subscribe form button,
+    footer #Subscribe i {
+        margin: 3px;
+    }
+}
+
+@media (max-width:444px) {
+    header #plot_info #plot {
+        padding: 0px 50px;
+        font-size: 18px;
+    }
+    header #headline {
+        width: 66%;
+        margin: auto;
+        text-align: center;
+    }
+    #spn_s_abt #seasons #S_info p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:400px) {
+    header #plot_info #plot {
+        padding: 0px 30px;
+        font-size: 18px;
+    }
+    #spn_ss ul li img {
+        width: 150px;
+        height: 220px;
+    }
+}
+
+@media (max-width:320px) {
+    header #headline {
+        width: 77%;
+    }
+    header #headline h1 {
+        font-size: 22px;
+    }
+    #spn_ss ul li img {
+        width: 120px;
+        height: 168px;
+    }
+}
